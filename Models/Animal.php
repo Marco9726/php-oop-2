@@ -1,12 +1,14 @@
 <?php
 class Animal extends Card
 {
-	public function __construct($_animal)
+	public $name;
+	public function __construct($_name)
 	{
-		$this->animal = $_animal;
+		$this->name = $_name;
 	}
+
 	public function getIcon()
 	{
-		return '<i class="fa-solid fa-' . $this->animal . '"></i>';
+		return '<i class="fa-solid fa-' . $this->name . '"></i>';
 	}
 }
