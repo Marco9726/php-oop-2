@@ -13,7 +13,18 @@
 </head>
 
 <body>
-
+	<header>
+		<div class="container w-75">
+			<h1>Boolshop</h1>
+		</div>
+	</header>
+	<main>
+		<div class="container w-75">
+			<div class="row">
+				<div class="col-12"></div>
+			</div>
+		</div>
+	</main>
 </body>
 
 </html>
