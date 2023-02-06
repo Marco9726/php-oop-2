@@ -6,7 +6,7 @@ class Animal extends Card
 	{
 		$this->name = $_name;
 	}
-
+	//funzione per generare dinamicamente l'icona dell'animale
 	public function getIcon()
 	{
 		return '<i class="fa-solid fa-' . $this->name . '"></i>';
