@@ -12,6 +12,7 @@ class Product
 		$this->name = $_name;
 		$this->image = $_image;
 		$this->price = $_price;
-		$this->animal = $_animal;
+		//la proprietà 'name' dell'istanza di Animal sarà uguale alla properità 'animal' della classe Product
+		$this->animal = $_animal->name;
 	}
 }

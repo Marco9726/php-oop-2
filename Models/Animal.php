@@ -8,8 +8,8 @@ class Animal
 		$this->name = $_name;
 	}
 
-	// public function getIcon()
-	// {
-	// 	return '<i class="fa-solid fa-' . $this->name . '"></i>';
-	// }
+	public function getIcon()
+	{
+		return '<i class="fa-solid fa-' . $this->name . '"></i>';
+	}
 }
