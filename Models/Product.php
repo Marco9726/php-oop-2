@@ -15,4 +15,13 @@ class Product
 		//la proprietà 'name' dell'istanza di Animal sarà uguale alla properità 'animal' della classe Product
 		$this->animal = $_animal->name;
 	}
+
+	public function getImgHtml()
+	{
+		return '<img src="' . $this->image . '" class="card-img-top">';
+	}
+	public function getNameHtml()
+	{
+		return '<h3>' . $this->name . '</h3>';
+	}
 }

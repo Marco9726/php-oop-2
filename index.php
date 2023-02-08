@@ -15,19 +15,21 @@ include __DIR__ . '/db.php';
 </head>
 
 <body>
-	<header>
+	<header class="mb-5">
 		<div class="container w-75">
 			<h1>Boolshop</h1>
 		</div>
 	</header>
 	<main>
 		<div class="container w-75">
+			<h2>I Nostri Prodotti</h2>
 			<div class="d-flex flex-wrap">
 				<?php
 				foreach ($products as $product) { ?>
-					<pre>
-						<?php var_dump($product) ?>
-					</pre>
+					<div class="card mb-4 p-3">
+						<?php echo $product->getImgHtml() ?>
+
+					</div>
 
 				<?php } ?>
 			</div>

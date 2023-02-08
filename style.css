@@ -1,0 +1,8 @@
+.card {
+	width: calc(100% / 3 - 2rem)
+}
+
+.card:nth-of-type(3n+2) {
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
