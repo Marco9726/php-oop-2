@@ -25,10 +25,11 @@ include __DIR__ . '/db.php';
 			<h2>I Nostri Prodotti</h2>
 			<div class="d-flex flex-wrap">
 				<?php
-				foreach ($products as $product) { ?>
+				foreach ($products as $product) {	?>
 					<div class="card mb-4 p-3">
-						<?php echo $product->getImgHtml() ?>
-
+						<?php echo $product->getImgHtml();
+						echo $product->getNameHtml();
+						echo $product->getIconAndName() ?>
 					</div>
 
 				<?php } ?>

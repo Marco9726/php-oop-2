@@ -13,7 +13,7 @@ class Product
 		$this->image = $_image;
 		$this->price = $_price;
 		//la proprietà 'name' dell'istanza di Animal sarà uguale alla properità 'animal' della classe Product
-		$this->animal = $_animal->name;
+		$this->animal = $_animal;
 	}
 
 	public function getImgHtml()
@@ -22,6 +22,10 @@ class Product
 	}
 	public function getNameHtml()
 	{
-		return '<h3>' . $this->name . '</h3>';
+		return '<h4>' . $this->name . '</h4>';
+	}
+	public function getIconAndName()
+	{
+		return $this->animal->getIconAndName();
 	}
 }

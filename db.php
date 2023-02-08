@@ -6,10 +6,10 @@ include __DIR__ . '/Models/Item.php';
 include __DIR__ . '/Models/Toy.php';
 //creo 4 istanze della classe 'Animal' ,passando come parametro il nome dell'animale, in un array associativo
 $animals = [
-	'Cane' => new Animal('cat'),
-	'Gatto' => new Animal('dog'),
-	'Uccello' => new Animal('dove'),
-	'Pesce' => new Animal('fish')
+	'Cane' => new Animal('dog', 'Cane'),
+	'Gatto' => new Animal('cat', 'Gatto'),
+	'Uccello' => new Animal('dove', 'Uccello'),
+	'Pesce' => new Animal('fish', 'Pesce')
 ];
 //creo l'array delle varie istanze
 $products = [
