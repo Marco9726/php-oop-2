@@ -10,4 +10,13 @@ class Item extends Product
 		$this->material = $_material;
 		$this->size = $_size;
 	}
+
+	public function getMaterialHtml()
+	{
+		return 'Materiale: ' . $this->material;
+	}
+	public function getSizeHtml()
+	{
+		return 'Dimensioni: ' . $this->size;
+	}
 }

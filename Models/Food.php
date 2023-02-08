@@ -10,4 +10,12 @@ class Food extends Product
 		$this->weight = $_weight;
 		$this->ingredients = $_ingredients;
 	}
+	public function getWeightHtml()
+	{
+		return 'Peso netto: ' . $this->weight . 'g';
+	}
+	public function getIngredientsHtml()
+	{
+		return 'Ingredienti: ' . implode(', ', $this->ingredients);
+	}
 }

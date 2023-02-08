@@ -10,4 +10,13 @@ class Toy extends Product
 		$this->features = $_features;
 		$this->size = $_size;
 	}
+
+	public function getFeaturesHtml()
+	{
+		return 'Caratteristiche: ' . $this->features;
+	}
+	public function getSizeHtml()
+	{
+		return 'Dimensioni: ' . $this->size;
+	}
 }

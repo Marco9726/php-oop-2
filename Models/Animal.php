@@ -9,8 +9,12 @@ class Animal
 		$this->icon = $_icon;
 		$this->name = $_name;
 	}
-	public function getIconAndName()
+	public function getIconHtml()
 	{
-		return '<i class="fa-solid fa-' . $this->icon . '"></i>' . '<span>' . $this->name . '</span>';
+		return '<i class="fa-solid fa-' . $this->icon . '"></i>';
+	}
+	public function getNameHtml()
+	{
+		return $this->name;
 	}
 }

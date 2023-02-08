@@ -29,9 +29,23 @@ include __DIR__ . '/db.php';
 					<div class="card mb-4 p-3">
 						<?php echo $product->getImgHtml();
 						echo $product->getNameHtml();
-						echo $product->getIconAndName() ?>
+						echo '<div>' . $product->getIconHtml() .  $product->getAnimalNameHtml() .  '</div>';
+						echo $product->getPriceHtml();
+						switch (get_class($product)) {
+							case "Food":
+								echo '<div>' . $product->getWeightHtml() . '</div>';
+								echo '<div>' . $product->getIngredientsHtml() . '</div>';
+								break;
+							case "Item":
+								echo '<div>' . $product->getMaterialHtml() . '</div>';
+								echo '<div>' . $product->getSizeHtml() . '</div>';
+								break;
+							case "Toy":
+								echo '<div>' . $product->getFeaturesHtml() . '</div>';
+								echo '<div>' . $product->getSizeHtml() . '</div>';
+								break;
+						} ?>
 					</div>
-
 				<?php } ?>
 			</div>
 		</div>

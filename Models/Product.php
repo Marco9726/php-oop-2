@@ -12,7 +12,7 @@ class Product
 		$this->name = $_name;
 		$this->image = $_image;
 		$this->price = $_price;
-		//la proprietà 'name' dell'istanza di Animal sarà uguale alla properità 'animal' della classe Product
+		//la proprietà 'animal' prende il valore dell'istanza Animal incapsulata nel construct
 		$this->animal = $_animal;
 	}
 
@@ -24,8 +24,20 @@ class Product
 	{
 		return '<h4>' . $this->name . '</h4>';
 	}
-	public function getIconAndName()
+
+	// ritorno le funzioni dell'istanza animal 
+	public function getIconHtml()
 	{
-		return $this->animal->getIconAndName();
+		return $this->animal->getIconHtml();
+	}
+	public function getAnimalNameHtml()
+	{
+		return $this->animal->getNameHtml();
+	}
+	//
+
+	public function getPriceHtml()
+	{
+		return 'Prezzo: ' . $this->price . '€';
 	}
 }
