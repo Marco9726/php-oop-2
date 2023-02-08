@@ -1,5 +1,5 @@
 <?php
-
+include __DIR__ . '/db.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,8 +24,10 @@
 		<div class="container w-75">
 			<div class="d-flex flex-wrap">
 				<?php
-				foreach ($cardsArray as $card) { ?>
-
+				foreach ($products as $product) { ?>
+					<pre>
+						<?php var_dump($product) ?>
+					</pre>
 
 				<?php } ?>
 			</div>
